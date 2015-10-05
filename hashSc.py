@@ -1,6 +1,6 @@
 #coding : utf-8
 
-'''
+"""
 =================================================================
 ===================ENGLISH-DOC===================================
 =================================================================
@@ -23,7 +23,7 @@
 ===================RUSSIAN-DOC===================================
 =================================================================
 =    Это модуль который имеет функции для расчета хеш сумм.     =
-=       Для строк пока работает только в Linux and Mac          =
+=          Для строк пока работает только в Linux and Mac       =
 =          Вид хеш суммы - имя функции()                        =
 =          1.Md5 хэш - hasMd5()                                 =
 =          2.sha1 хеш - hasSha1()                               =
@@ -40,7 +40,7 @@
 =================================================================
 =================================================================
 =================================================================
-'''
+"""
 
 __author__ = 'yorick'
 
@@ -55,13 +55,13 @@ import hashlib
 # =========================================================================================
 def hasMd5(filename):
 
-    '''
+    """
     ===================
     calculating md5 hash
     ===================
     расчитывает md5 хеш
     ===================
-    '''
+    """
 
     m = hashlib.md5()
     f = open(filename, 'rb')
@@ -73,13 +73,13 @@ def hasMd5(filename):
 
 def hasSha256(filename):
 
-    '''
+    """
     =======================
     calculating sha256 hash
     =======================
     расчитывает sha256 хеш
     =======================
-    '''
+    """
 
     m = hashlib.sha256()
     f = open(filename, 'rb')
@@ -91,13 +91,13 @@ def hasSha256(filename):
 
 def hasSha512(filename):
 
-    '''
+    """
     =======================
     calculating sha512 hash
     =======================
     расчитывает sha512 хеш
     =======================
-    '''
+    """
 
     m = hashlib.sha512()
     f = open(filename, 'rb')
@@ -109,13 +109,13 @@ def hasSha512(filename):
 
 def hasSha384(filename):
 
-    '''
+    """
     =======================
     calculating sha384 hash
     =======================
     расчитывает sha384 хеш
     =======================
-    '''
+    """
     m = hashlib.sha384()
     f = open(filename, 'rb')
     c = f.read()
@@ -126,13 +126,13 @@ def hasSha384(filename):
 
 def hasSha224(filename):
 
-    '''
+    """
     ========================
     calculating sha224 hash
     =======================
     расчитывает sha224 хеш
     =======================
-    '''
+    """
 
     m = hashlib.sha224()
     f = open(filename, 'rb')
@@ -145,13 +145,13 @@ def hasSha224(filename):
 
 def hasSha1(filename):
 
-    '''
+    """
     =====================
     calculating sha1 hash
     =====================
     расчитывает sha1 хеш
     =====================
-    '''
+    """
 
     m = hashlib.sha1()
     f = open(filename, 'rb')
@@ -169,13 +169,13 @@ def hasSha1(filename):
 
 def hasMd5Str(content):
 
-    '''
+    """
     ======================================
     calculating md5 hash of string content
     ======================================
     расчитывает md5 хеш строки content
     ======================================
-    '''
+    """
 
     content = content.encode('utf-8')
     m = hashlib.md5()
@@ -185,13 +185,13 @@ def hasMd5Str(content):
 
 def hasSha256Str(content):
 
-    '''
+    """
     =========================================
     calculating sha256 hash of string content
     =========================================
     расчитывает sha256 хеш строки content
     =========================================
-    '''
+    """
 
     content = content.encode('utf-8')
     m = hashlib.sha256()
@@ -201,13 +201,13 @@ def hasSha256Str(content):
 
 def hasSha512Str(content):
 
-    '''
+    """
     =========================================
     calculating sha512 hash of string content
     =========================================
     расчитывает sha512 хеш строки content
     =========================================
-    '''
+    """
 
     content = content.encode('utf-8')
     m = hashlib.sha512()
@@ -217,13 +217,13 @@ def hasSha512Str(content):
 
 def hasSha384Str(content):
 
-    '''
+    """
     =========================================
     calculating sha384 hash of string content
     =========================================
     расчитывает sha384 хеш строки content
     =========================================
-    '''
+    """
 
     content = content.encode('utf-8')
     m = hashlib.sha384()
@@ -233,13 +233,13 @@ def hasSha384Str(content):
 
 def hasSha224Str(content):
 
-    '''
+    """
     =========================================
     calculating sha224 hash of string content
     =========================================
     расчитывает sha224 хеш строки content
     =========================================
-    '''
+    """
 
     content = content.encode('utf-8')
     m = hashlib.sha224()
@@ -250,13 +250,13 @@ def hasSha224Str(content):
 
 def hasSha1Str(content):
 
-    '''
+    """
     =======================================
     calculating sha1 hash of string content
     =======================================
     расчитывает sha1 хеш строки content
     =======================================
-    '''
+    """
 
     content = content.encode('utf-8')
     m = hashlib.sha1()
